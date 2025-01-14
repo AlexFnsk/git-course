@@ -115,3 +115,11 @@ media/
 # **/migrations/**
 # !**/migrations
 # !**/migrations/__init__.py
+
+@echo off
+py -m venv env
+type nul > env.bat
+echo cd env\Scripts >> env.bat
+echo call activate.bat >> env.bat
+echo cd ..\.. >> env.bat
+call env.bat
